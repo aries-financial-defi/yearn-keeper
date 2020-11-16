@@ -10,7 +10,6 @@ from yearn.vaults import load_registry, load_vaults
 
 warnings.filterwarnings("ignore", category=BrownieEnvironmentWarning)
 
-
 def main():
     user = accounts.load(input("brownie account: "))
     print(f"loaded keeper account: {user}")

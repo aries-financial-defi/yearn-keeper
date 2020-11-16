@@ -3,7 +3,7 @@ from typing import Union
 
 from brownie import Contract, interface, web3
 from brownie.network.contract import InterfaceContainer
-
+registryAddress="0x3eE41C098f9666ed2eA246f4D2558010e59d63A0"
 
 @dataclass
 class Vault:
@@ -26,4 +26,4 @@ def load_vaults(registry):
 
 
 def load_registry():
-    return Contract(web3.ens.resolve("registry.ychad.eth"))
+    return Contract(registryAddress)
