@@ -11,12 +11,17 @@ a keeper bot for yearn v1 strategies which is a tad too smart
 
 ## environments
 
-* update ~/.bash_profile
+* update `~/.bash_profile`
 ```
 export ETHERSCAN_TOKEN=
 export WEB3_INFURA_PROJECT_ID=
 export ETH_RPC_URL=
+export REGISTRY_ADDRESS=
+export KEEPER3CRV_ADDRESS=
+export UNISWAP_ADDRESS=
 ```
+
+* load `$ source ~/.bash_profile`
 
 ## start
 

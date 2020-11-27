@@ -1,9 +1,10 @@
+import os
 from dataclasses import dataclass
 from typing import Union
 
 from brownie import Contract, interface, web3
 from brownie.network.contract import InterfaceContainer
-registryAddress="0x3eE41C098f9666ed2eA246f4D2558010e59d63A0"
+registryAddress=os.environ.get("REGISTRY_ADDRESS", "0x3eE41C098f9666ed2eA246f4D2558010e59d63A0")
 
 @dataclass
 class Vault:

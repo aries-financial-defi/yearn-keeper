@@ -1,4 +1,5 @@
 import time
+import os
 from pathlib import Path
 
 import toml
@@ -7,11 +8,10 @@ from click import secho
 from eth_utils import humanize_seconds
 
 db_path = Path("keeper.toml")
-uniswap = Contract("0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D")
-
+uniswap = os.environ.get("UNISWAP_ADDRESS", "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D")
 
 class Keeper3Crv:
-    address = "0xC59601F0CC49baa266891b7fc63d2D5FE097A79D"
+    address = os.environ.get("KEEPER3CRV_ADDRESS", "0xC59601F0CC49baa266891b7fc63d2D5FE097A79D")
 
     def __init__(self):
         strategy = Contract(self.address)
