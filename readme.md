@@ -30,9 +30,11 @@ export UNISWAP_ADDRESS=
 $ brownie run scripts/keeper.py --network mainnet
 ```
 
-## todo
-* Change ETH_RPC_URL to web3.py URI
-* Replace addresses and test
+# load strategist account
+```BASH
+$ brownie account:
+$ Enter the password to unlock this account:
+```
 
 ## supported strategies
 
